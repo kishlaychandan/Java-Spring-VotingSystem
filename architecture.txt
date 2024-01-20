@@ -1,0 +1,17 @@
+Project Architecture:
+
+The project follows a simple architecture with three main components: VotingController, VotingService, and in-memory storage for candidate data. The application is built using the Spring framework to handle RESTful API requests.
+
+VotingController:
+
+Receives incoming HTTP requests.
+Routes requests to appropriate methods in the VotingService.
+VotingService:
+
+Implements business logic for candidate operations.
+Uses local variables for in-memory storage of candidate data.
+Ensures thread safety for concurrent access.
+In-memory Storage:
+
+Utilizes local variables to simulate candidate data storage.
+Provides methods for adding candidates, casting votes, counting votes, listing votes, and determining the winner.
